@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador</title>
+    <link rel="stylesheet" type="text/css" href="Estilo.css">
+    <script lang="javascript" src="Javascript.js"></script>
+</head>
+<body>
+    <div id="interface">
+
+        <header id="titulo">
+            <h1>Qual é o melhor custo-benefício?</h1>
+        </header>
+
+        <fieldset id="produtoA" class="prodA" oninput="calcula()" disabled>
+            <legend>Produto A</legend>
+
+            <p><label for="iQA">Quantidade</label></p>
+            <p><input type="number" id="iQA" placeholder="0"><span id="uQA"></span></p>
+
+            <p><label for="iQA">Preço</label></p>
+            <p>R$ <input type="number" id="iPA" placeholder="0"></p>
+        </fieldset>
+
+        <fieldset id="unidades">
+            <legend>Unidades</legend>
+            <p><label for="iUN">Medida</label></p>
+
+            <p><select name="unSelect" id="unS" oninput="mudamedida()">
+                    <option value="x">Selecione</option>
+                    <optgroup label="Peso">
+                        <option value="Kg">Quilos (Kg)</option>
+                        <option value="g">Gramas (g)</option>
+                    </optgroup>
+                    <optgroup label="Volume">
+                        <option value="L">Litros (L)</option>
+                    <option value="mL">Mililitros (mL)</option>
+                    </optgroup>
+                </select></p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                
+        </fieldset>
+
+        <fieldset id="produtoB" class="prodB" oninput="calcula()" disabled>
+            <legend>Produto B</legend>
+
+            <p><label for="iQB">Quantidade</label></p>
+            <p><input type="number" id="iQB" placeholder="0"><span id="uQB"></span></p>
+
+            <p><label for="iQA">Preço</label></p>
+            <p>R$ <input type="number" id="iPB" placeholder="0"></p>
+        </fieldset>
+        <header id="resultado">
+            <H2>Insira os dados dos produtos.</H2>
+        </div>
+    </div>
+
+</body>
+</html>
